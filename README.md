@@ -1,6 +1,6 @@
 # Orangezup
 
-> Orangezup is an API REST to process selective Orange Zup Talents using Spring Boot framework.
+> Orangezup is an API REST to Orange Zup Talents's selective process using Spring Boot framework.
 
 
 ## Dependency
