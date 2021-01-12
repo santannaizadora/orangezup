@@ -8,6 +8,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.*;
+import org.hibernate.validator.constraints.br.CPF;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
@@ -24,9 +26,11 @@ public class User implements Serializable {
 	private String name;
 	
 	@Column(nullable = false, unique = true)
+	@Email 
 	private String email;
 	
 	@Column(nullable = false, unique = true)
+	@CPF
 	private String cpf;
 	
 	@Column(nullable = false)
